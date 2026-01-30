@@ -39,7 +39,7 @@ def enviar_recordatorio_turno(turno_id):
         <body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5;">
             <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <h1 style="color: #2563eb; margin: 0;">🦷 OdontoLeto</h1>
+                    <h1 style="color: #2563eb; margin: 0;">🦷 OdontoSys</h1>
                     <h2 style="color: #374151; margin: 10px 0;">Recordatorio de Turno</h2>
                 </div>
                 
@@ -80,7 +80,7 @@ def enviar_recordatorio_turno(turno_id):
                 <div style="text-align: center; margin-top: 30px;">
                     <p style="color: #6b7280; font-size: 14px;">
                         ¡Esperamos verle pronto!<br>
-                        <strong>Equipo OdontoLeto</strong>
+                        <strong>Equipo OdontoSys</strong>
                     </p>
                 </div>
             </div>
@@ -89,7 +89,7 @@ def enviar_recordatorio_turno(turno_id):
         """
         
         mensaje_texto = f"""
-        OdontoLeto - Recordatorio de Turno
+        OdontoSys - Recordatorio de Turno
         
         Estimado/a {contexto['paciente_nombre']},
         
@@ -107,7 +107,7 @@ def enviar_recordatorio_turno(turno_id):
         • Si no puede asistir, comuníquese con anticipación
         
         ¡Esperamos verle pronto!
-        Equipo OdontoLeto
+        Equipo OdontoSys
         """
         
         # Enviar el email

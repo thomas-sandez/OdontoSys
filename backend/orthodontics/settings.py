@@ -187,9 +187,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'odontoleto@gmail.com'  # Tu email real de Gmail
+EMAIL_HOST_USER = 'odontosys@gmail.com'  # Tu email real de Gmail
 EMAIL_HOST_PASSWORD = 'wsgtddezmbkbrqpc'  # 16 caracteres de Google
-DEFAULT_FROM_EMAIL = 'OdontoLeto <odontoleto@gmail.com>'
+DEFAULT_FROM_EMAIL = 'OdontoSys <odontosys@gmail.com>'
 
 # Configuración de Celery
 CELERY_BROKER_URL = 'redis://localhost:6379/0'

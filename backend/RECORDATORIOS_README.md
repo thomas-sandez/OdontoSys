@@ -13,7 +13,7 @@ pip install -r requirements.txt
 docker pull redis:alpine
 
 # Crear y ejecutar contenedor Redis
-docker run --name redis-odontoleto -p 6379:6379 -d redis:alpine
+docker run --name redis-odontosys -p 6379:6379 -d redis:alpine
 
 # Verificar que está corriendo
 docker ps
@@ -22,16 +22,16 @@ docker ps
 **Comandos útiles para Redis:**
 ```bash
 # Iniciar contenedor (si está detenido)
-docker start redis-odontoleto
+docker start redis-odontosys
 
 # Detener contenedor
-docker stop redis-odontoleto
+docker stop redis-odontosys
 
 # Ver logs de Redis
-docker logs redis-odontoleto
+docker logs redis-odontosys
 
 # Conectar a Redis CLI
-docker exec -it redis-odontoleto redis-cli
+docker exec -it redis-odontosys redis-cli
 ```
 
 ### 3. Configurar Email en settings.py
@@ -40,7 +40,7 @@ Editar las siguientes líneas en `orthodontics/settings.py`:
 ```python
 EMAIL_HOST_USER = 'tu_email@gmail.com'  # Tu email real
 EMAIL_HOST_PASSWORD = 'tu_password_de_aplicacion'  # Password de aplicación de Gmail
-DEFAULT_FROM_EMAIL = 'OdontoLeto <tu_email@gmail.com>'
+DEFAULT_FROM_EMAIL = 'OdontoSys <tu_email@gmail.com>'
 ```
 
 **Para Gmail:**
@@ -65,10 +65,10 @@ python manage.py setup_reminders
 ### 1. Iniciar Redis con Docker
 ```bash
 # Iniciar contenedor Redis (si no está corriendo)
-docker start redis-odontoleto
+docker start redis-odontosys
 
 # Verificar que está activo
-docker ps | grep redis-odontoleto
+docker ps | grep redis-odontosys
 ```
 
 ### 2. Iniciar Django
@@ -119,9 +119,9 @@ celery -A orthodontics purge
 ## Troubleshooting
 
 ### Error de conexión a Redis
-- Verificar que el contenedor Docker esté corriendo: `docker ps | grep redis-odontoleto`
-- Iniciar contenedor si está detenido: `docker start redis-odontoleto`
-- Verificar logs del contenedor: `docker logs redis-odontoleto`
+- Verificar que el contenedor Docker esté corriendo: `docker ps | grep redis-odontosys`
+- Iniciar contenedor si está detenido: `docker start redis-odontosys`
+- Verificar logs del contenedor: `docker logs redis-odontosys`
 - Comprobar la URL en CELERY_BROKER_URL (debe ser `redis://localhost:6379/0`)
 
 ### Emails no se envían
