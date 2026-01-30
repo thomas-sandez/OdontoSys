@@ -1,6 +1,6 @@
-#  **OdontoLeto**
+#  **OdontoSys**
 
-**OdontoLeto** es una plataforma web integral diseñada para la **gestión de consultorios odontológicos**.  
+**OdontoSys** es una plataforma web integral diseñada para la **gestión de consultorios odontológicos**.  
 Este proyecto fue desarrollado por el **Grupo 4** como parte de la materia **Desarrollo de Software (Comisión S32)**.
 
 ---
@@ -158,8 +158,8 @@ frontend/
 
 ## Autores
 
-- Ulises Vetere  
-- Thomas Asandez  
+- Thomas Sandez 
+- Ulises Vetere   
 - Martín Forlini  
 - Nicolás Sampaoli  
 - Valentín Torres  
